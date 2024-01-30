@@ -13,7 +13,7 @@ Mentor : [Dr. Kushal Shah](https://www.linkedin.com/in/kushal-shah-95b9a3b)
 
 ## License
 
-Similar to the original Lang-8 corpus, this cleaned corpus is also distributed for research and educational purposes only. Specifically, this is released under [CC BY-NC-SA 4.0][https://creativecommons.org/licenses/by-nc-sa/4.0/] license.  
+Similar to the original Lang-8 corpus, this cleaned corpus is also distributed for research and educational purposes only. Specifically, this is released under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.  
 
 
 
