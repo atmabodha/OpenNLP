@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: Fictometer
+Version: 0.1.0
+Summary: Classifies text as 'Fiction' or 'Non-Fiction'.
+Author-email: Kushal Shah <atmabodha@gmail.com>
+Project-URL: Homepage, https://bekushal.medium.com/fictometer-a-simple-and-explainable-algorithm-for-sentiment-analysis-31186d2a8c7e
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Fictometer
+
+## Description
+
+Fictometer is an algorithm for analysing whether the given text is ```Fiction``` or ```Non-Fiction```.
+It first calculates the number of ```adverbs```, ```adjectives``` and ```pronouns``` in the text.
+It then calculates Ratio of Adjective to Pronoun ```RADJPRON``` and Ratio of Adverb to Adjective ```RADVADJ```, 
+from which it predicts whether text is ```Fiction``` or ```Non-Fiction```.
+
+Blog Link: 🔗[LINK](https://bekushal.medium.com/fictometer-a-simple-and-explainable-algorithm-for-sentiment-analysis-31186d2a8c7e)
+
+
+## Installation
+
+```bash
+pip install Fictometer
+```
+
+
+## Usage
+
+    import Fictometer
+
+    text = "your_text"
+
+    pc = Fictometer.ficto.pos_count(text)
+    pr = Fictometer.ficto.pos_ratio(pc)
+    result = Fictometer.ficto.fictometer(pr)
+    Fictometer.ficto.help()
+
+
+## Contact
+
+email - atmabodha@gmail.com
