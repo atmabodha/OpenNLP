@@ -5,7 +5,7 @@ import fal_client
 handler = fal_client.submit(
     "fal-ai/lora",
     arguments={
-        "model_name": "stabilityai/stable-diffusion-xl-base-1.0",
+        "model_name": "fal-ai/fast-lcm-diffusion",
         # Replace the name of your fine-tuned model in place model name.
         # To update the model name:
         # 1. Go to Fal.ai's official website: https://fal.ai/
@@ -14,7 +14,7 @@ handler = fal_client.submit(
         # 4. You will see your fine-tuned model listed.
         # 5. Click on "Playground" to access the model.
         # 6. Copy the model name and update it in the script.
-        "prompt": "photo of a rhino dressed suit and tie sitting at a table in a bar with a bar stools, award winning photography, Elke vogelsang"
+        "prompt": "A young Indian monk playing basketball"
     },
 )
  
