@@ -1,0 +1,9 @@
+requests
+sentence-transformers
+transformers
+torch
+qdrant-client
+langgraph
+pandas
+tqdm
+better-profanity

@@ -1,0 +1,72 @@
+{
+  "system_info": {
+    "model_name": "llama3-8b-8192",
+    "files_loaded": 7,
+    "total_chunks": 18667,
+    "total_chars_processed": 4788316,
+    "pattern_rules_loaded": 6,
+    "critical_patterns": 4,
+    "dynamic_regex_available": false,
+    "transformers_available": false
+  },
+  "enhanced_features": {
+    "character_validation": true,
+    "negation_processing": true,
+    "confusion_detection": true,
+    "bias_neutral_prompting": true,
+    "hybrid_validation": true
+  },
+  "validation_stats": {
+    "character_errors_prevented": 0,
+    "negation_errors_prevented": 0,
+    "confusion_detected": 0,
+    "advanced_validations": 16
+  },
+  "chunk_distribution": {
+    "valmiki_ramayan_supplementary_knowledge.txt": 77,
+    "valmiki_ramayan_bala_kanda_book1.txt": 2121,
+    "valmiki_ramayan_ayodhya_kanda_book2.txt": 4017,
+    "valmiki_ramayan_aranya_kanda_book3.txt": 2337,
+    "valmiki_ramayan_kishkindha_kanda_book4.txt": 2268,
+    "valmiki_ramayan_sundara_kanda_book5.txt": 2623,
+    "valmiki_ramayan_yuddha_kanda_book6.txt": 5224
+  },
+  "pattern_sources": {
+    "legacy": 6
+  },
+  "entity_coverage": [
+    "rama",
+    "bharata",
+    "dasaratha",
+    "ayodhya",
+    "kausalya",
+    "sita",
+    "janaka",
+    "hanuman",
+    "vali",
+    "ravana",
+    "lanka",
+    "lakshmana",
+    "sumitra",
+    "kaikeyi",
+    "kumbhakarna",
+    "indrajit",
+    "vibhishana",
+    "sugriva",
+    "sampati"
+  ],
+  "topic_coverage": [
+    "kingdom",
+    "dharma",
+    "war",
+    "devotion",
+    "monkeys",
+    "bridge",
+    "leap",
+    "demons",
+    "exile",
+    "marriage",
+    "kidnapping",
+    "search"
+  ]
+}

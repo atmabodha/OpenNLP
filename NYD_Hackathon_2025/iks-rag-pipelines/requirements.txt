@@ -1,0 +1,8 @@
+python-dotenv
+groq
+numpy<2
+pandas
+qdrant-client
+spacy
+better-profanity 
+together

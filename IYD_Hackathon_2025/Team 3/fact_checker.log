@@ -1,0 +1,1157 @@
+2025-06-17 08:31:45,307 - INFO - Profanity filter initialized
+2025-06-17 08:31:45,307 - INFO - ModelCache singleton instance created
+2025-06-17 08:31:45,308 - INFO - ModelCache initialized with empty model slots
+2025-06-17 08:31:45,308 - INFO - Global model cache instance created
+2025-06-17 08:31:45,308 - INFO - RetrieverAgent initialized with k=30
+2025-06-17 08:31:45,308 - INFO - RerankerAgent initialized with top=15
+2025-06-17 08:31:45,308 - INFO - DecisionController initialized with max_retries=1
+2025-06-17 08:31:45,360 - INFO - Use pytorch device_name: mps
+2025-06-17 08:31:45,362 - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en
+2025-06-17 08:37:21,242 - INFO - Save model to /Users/apple/Code/IYD2025/Sanjay-iyd/models/bge-base-en
+2025-06-17 08:46:03,282 - INFO - Loading embedding model...
+2025-06-17 08:46:03,284 - INFO - Loading cached embedding model from /Users/apple/Code/IYD2025/Sanjay-iyd/models/bge-base-en
+2025-06-17 08:46:03,286 - INFO - Use pytorch device_name: mps
+2025-06-17 08:46:03,286 - INFO - Load pretrained SentenceTransformer: /Users/apple/Code/IYD2025/Sanjay-iyd/models/bge-base-en
+2025-06-17 08:46:03,944 - INFO - Embedding model loaded and cached in memory
+2025-06-17 08:46:03,944 - INFO - Loading reranker models...
+2025-06-17 08:46:03,944 - INFO - Loading cached reranker models from /Users/apple/Code/IYD2025/Sanjay-iyd/models/bge-reranker-base
+2025-06-17 08:46:04,291 - INFO - Reranker models loaded and cached in memory
+2025-06-17 08:46:04,461 - INFO - Validating query: Alliance with the vanara (monkey) army was instrum...
+2025-06-17 08:46:04,474 - INFO - Query validation passed
+2025-06-17 08:46:04,475 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:46:05,955 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:46:09,270 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:46:09,278 - INFO - Retrieved 30 documents
+2025-06-17 08:46:09,279 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:46:11,260 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:46:11,260 - INFO - Generating fact-check response for query
+2025-06-17 08:46:19,111 - INFO - Generated verdict: TRUE
+2025-06-17 08:46:19,115 - INFO - Evaluating response quality
+2025-06-17 08:46:19,720 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:46:19,720 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:46:21,751 - INFO - Validating query: Bharata accepted the throne without any longing fo...
+2025-06-17 08:46:21,779 - INFO - Query validation passed
+2025-06-17 08:46:21,780 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:46:22,685 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:46:24,326 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:46:24,336 - INFO - Retrieved 30 documents
+2025-06-17 08:46:24,338 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:46:25,935 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:46:25,936 - INFO - Generating fact-check response for query
+2025-06-17 08:46:32,724 - INFO - Generated verdict: FALSE
+2025-06-17 08:46:32,726 - INFO - Evaluating response quality
+2025-06-17 08:46:33,209 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:46:33,210 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:46:35,223 - INFO - Validating query: Bharata declared war on Rama immediately after his...
+2025-06-17 08:46:35,246 - INFO - Query validation passed
+2025-06-17 08:46:35,246 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:46:36,191 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:46:37,873 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:46:37,882 - INFO - Retrieved 30 documents
+2025-06-17 08:46:37,883 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:46:38,620 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:46:38,621 - INFO - Generating fact-check response for query
+2025-06-17 08:46:44,131 - INFO - Generated verdict: FALSE
+2025-06-17 08:46:44,133 - INFO - Evaluating response quality
+2025-06-17 08:46:44,661 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 08:46:44,662 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:46:44,662 - INFO - Retry needed, attempt 1
+2025-06-17 08:46:52,253 - INFO - Evaluating response quality
+2025-06-17 08:46:52,769 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 08:46:52,769 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:46:52,774 - INFO - Maximum retries (1) reached
+2025-06-17 08:46:54,800 - INFO - Validating query: Bharata was the youngest of Rama’s brothers....
+2025-06-17 08:46:54,815 - INFO - Query validation passed
+2025-06-17 08:46:54,816 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:46:55,761 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:46:57,258 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:46:57,265 - INFO - Retrieved 30 documents
+2025-06-17 08:46:57,266 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:46:58,290 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:46:58,291 - INFO - Generating fact-check response for query
+2025-06-17 08:47:04,213 - INFO - Generated verdict: FALSE
+2025-06-17 08:47:04,215 - INFO - Evaluating response quality
+2025-06-17 08:47:04,881 - INFO - Evaluation results - Feedback: uncertain, Needs retry: True
+2025-06-17 08:47:04,882 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:47:04,882 - INFO - Retry needed, attempt 1
+2025-06-17 08:47:13,324 - INFO - Evaluating response quality
+2025-06-17 08:47:13,851 - INFO - Evaluation results - Feedback: uncertain, Needs retry: True
+2025-06-17 08:47:13,852 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:47:13,852 - INFO - Maximum retries (1) reached
+2025-06-17 08:47:15,884 - INFO - Validating query: Dasaratha wanted Lakshmana to become the kind of A...
+2025-06-17 08:47:15,906 - INFO - Query validation passed
+2025-06-17 08:47:15,907 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:47:16,855 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:47:18,535 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:47:18,544 - INFO - Retrieved 30 documents
+2025-06-17 08:47:18,545 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:47:20,171 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:47:20,171 - INFO - Generating fact-check response for query
+2025-06-17 08:47:28,417 - INFO - Generated verdict: FALSE
+2025-06-17 08:47:28,419 - INFO - Evaluating response quality
+2025-06-17 08:47:29,005 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 08:47:29,006 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:47:29,006 - INFO - Retry needed, attempt 1
+2025-06-17 08:47:35,706 - INFO - Evaluating response quality
+2025-06-17 08:47:36,215 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 08:47:36,215 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:47:36,216 - INFO - Maximum retries (1) reached
+2025-06-17 08:47:38,235 - INFO - Validating query: Dasaratha was still alive when Rama returned to Ay...
+2025-06-17 08:47:38,270 - INFO - Query validation passed
+2025-06-17 08:47:38,271 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:47:39,159 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:47:40,692 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:47:40,700 - INFO - Retrieved 30 documents
+2025-06-17 08:47:40,704 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:47:41,811 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:47:41,811 - INFO - Generating fact-check response for query
+2025-06-17 08:47:48,659 - INFO - Generated verdict: FALSE
+2025-06-17 08:47:48,661 - INFO - Evaluating response quality
+2025-06-17 08:47:49,500 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:47:49,501 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:47:51,511 - INFO - Validating query: Dasharatha performs a Putrakameshti yajna to beget...
+2025-06-17 08:47:51,535 - INFO - Query validation passed
+2025-06-17 08:47:51,536 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:47:52,488 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:47:53,820 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:47:53,837 - INFO - Retrieved 30 documents
+2025-06-17 08:47:53,839 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:47:55,049 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:47:55,050 - INFO - Generating fact-check response for query
+2025-06-17 08:48:01,155 - INFO - Generated verdict: TRUE
+2025-06-17 08:48:01,158 - INFO - Evaluating response quality
+2025-06-17 08:48:01,636 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:48:01,636 - INFO - Confidence: 0.015, Evidence quality: low
+2025-06-17 08:48:03,652 - INFO - Validating query: Demoness Shurpanakha played a pivotal role in inci...
+2025-06-17 08:48:03,688 - INFO - Query validation passed
+2025-06-17 08:48:03,689 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:48:04,546 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:48:06,417 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:48:06,492 - INFO - Retrieved 30 documents
+2025-06-17 08:48:06,499 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:48:07,439 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:48:07,440 - INFO - Generating fact-check response for query
+2025-06-17 08:48:14,322 - INFO - Generated verdict: TRUE
+2025-06-17 08:48:14,323 - INFO - Evaluating response quality
+2025-06-17 08:48:15,077 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:48:15,078 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:48:17,105 - INFO - Validating query: Demoness Simhika tries to capture Hanuman during h...
+2025-06-17 08:48:17,141 - INFO - Query validation passed
+2025-06-17 08:48:17,142 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:48:18,087 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:48:19,380 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:48:19,384 - INFO - Retrieved 30 documents
+2025-06-17 08:48:19,386 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:48:20,282 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:48:20,282 - INFO - Generating fact-check response for query
+2025-06-17 08:48:33,863 - INFO - Generated verdict: TRUE
+2025-06-17 08:48:33,865 - INFO - Evaluating response quality
+2025-06-17 08:48:34,608 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:48:34,608 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:48:36,617 - INFO - Validating query: Dushana was the king of monkeys allied to Ravana....
+2025-06-17 08:48:36,638 - INFO - Query validation passed
+2025-06-17 08:48:36,639 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:48:37,549 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:48:38,968 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:48:38,980 - INFO - Retrieved 30 documents
+2025-06-17 08:48:38,984 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:48:39,719 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:48:39,720 - INFO - Generating fact-check response for query
+2025-06-17 08:48:44,510 - INFO - Generated verdict: FALSE
+2025-06-17 08:48:44,512 - INFO - Evaluating response quality
+2025-06-17 08:48:45,088 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:48:45,088 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:48:47,108 - INFO - Validating query: Hanuman betrayed Rama by divulging his battle plan...
+2025-06-17 08:48:47,137 - INFO - Query validation passed
+2025-06-17 08:48:47,138 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:48:48,056 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:48:49,525 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:48:49,537 - INFO - Retrieved 30 documents
+2025-06-17 08:48:49,538 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:48:50,356 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:48:50,357 - INFO - Generating fact-check response for query
+2025-06-17 08:48:59,359 - INFO - Generated verdict: FALSE
+2025-06-17 08:48:59,362 - INFO - Evaluating response quality
+2025-06-17 08:48:59,877 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 08:48:59,877 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:48:59,878 - INFO - Retry needed, attempt 1
+2025-06-17 08:49:05,152 - INFO - Evaluating response quality
+2025-06-17 08:49:05,632 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:49:05,632 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:49:05,632 - INFO - Maximum retries (1) reached
+2025-06-17 08:49:07,649 - INFO - Validating query: Hanuman is born to Anjana and Kesari with blessing...
+2025-06-17 08:49:07,686 - WARNING - Query validation failed: NOT RELEVANT
+2025-06-17 08:49:09,694 - INFO - Validating query: Hanuman married Surasa, the serpent goddess....
+2025-06-17 08:49:09,704 - INFO - Query validation passed
+2025-06-17 08:49:09,705 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:49:10,587 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:49:12,254 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:49:12,263 - INFO - Retrieved 30 documents
+2025-06-17 08:49:12,265 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:49:14,267 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:49:14,268 - INFO - Generating fact-check response for query
+2025-06-17 08:49:19,097 - INFO - Generated verdict: FALSE
+2025-06-17 08:49:19,099 - INFO - Evaluating response quality
+2025-06-17 08:49:19,590 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 08:49:19,590 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:49:19,590 - INFO - Retry needed, attempt 1
+2025-06-17 08:49:25,152 - INFO - Evaluating response quality
+2025-06-17 08:49:25,685 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 08:49:25,685 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:49:25,686 - INFO - Maximum retries (1) reached
+2025-06-17 08:49:27,701 - INFO - Validating query: Hanuman never meets Sita in the entire epic....
+2025-06-17 08:49:27,721 - INFO - Query validation passed
+2025-06-17 08:49:27,722 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:49:28,639 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:49:30,230 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:49:30,232 - INFO - Retrieved 30 documents
+2025-06-17 08:49:30,233 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:49:31,025 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:49:31,025 - INFO - Generating fact-check response for query
+2025-06-17 08:49:39,823 - INFO - Generated verdict: FALSE
+2025-06-17 08:49:39,824 - INFO - Evaluating response quality
+2025-06-17 08:49:40,464 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:49:40,465 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:49:42,478 - INFO - Validating query: Hanuman was defeated by Sita in a contest of stren...
+2025-06-17 08:49:42,506 - INFO - Query validation passed
+2025-06-17 08:49:42,507 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:49:43,403 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:49:45,112 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:49:45,122 - INFO - Retrieved 30 documents
+2025-06-17 08:49:45,124 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:49:46,151 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:49:46,152 - INFO - Generating fact-check response for query
+2025-06-17 08:49:52,933 - INFO - Generated verdict: FALSE
+2025-06-17 08:49:52,935 - INFO - Evaluating response quality
+2025-06-17 08:49:53,416 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:49:53,417 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:49:55,434 - INFO - Validating query: Hanuman was taught the scriptures by Sage Surasa d...
+2025-06-17 08:49:55,467 - INFO - Query validation passed
+2025-06-17 08:49:55,467 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:49:56,382 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:49:57,724 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:49:57,732 - INFO - Retrieved 30 documents
+2025-06-17 08:49:57,733 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:50:00,396 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:50:00,396 - INFO - Generating fact-check response for query
+2025-06-17 08:50:06,818 - INFO - Generated verdict: FALSE
+2025-06-17 08:50:06,824 - INFO - Evaluating response quality
+2025-06-17 08:50:07,352 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 08:50:07,353 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:50:07,354 - INFO - Retry needed, attempt 1
+2025-06-17 08:50:12,358 - INFO - Evaluating response quality
+2025-06-17 08:50:13,078 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 08:50:13,079 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:50:13,080 - INFO - Maximum retries (1) reached
+2025-06-17 08:50:15,097 - INFO - Validating query: Hanuman’s leap to Lanka was achieved by riding a g...
+2025-06-17 08:50:15,142 - INFO - Query validation passed
+2025-06-17 08:50:15,142 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:50:16,055 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:50:17,695 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:50:17,702 - INFO - Retrieved 30 documents
+2025-06-17 08:50:17,703 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:50:18,590 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:50:18,591 - INFO - Generating fact-check response for query
+2025-06-17 08:50:24,043 - INFO - Generated verdict: FALSE
+2025-06-17 08:50:24,043 - INFO - Evaluating response quality
+2025-06-17 08:50:24,766 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:50:24,766 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:50:26,775 - INFO - Validating query: Jatayu survived after fighting Ravana and later gu...
+2025-06-17 08:50:26,802 - INFO - Query validation passed
+2025-06-17 08:50:26,803 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:50:27,703 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:50:29,450 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:50:29,455 - INFO - Retrieved 30 documents
+2025-06-17 08:50:29,455 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:50:30,399 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:50:30,399 - INFO - Generating fact-check response for query
+2025-06-17 08:50:35,923 - INFO - Generated verdict: FALSE
+2025-06-17 08:50:35,925 - INFO - Evaluating response quality
+2025-06-17 08:50:36,407 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:50:36,407 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:50:38,424 - INFO - Validating query: Jatayu tries to rescue Sita from Ravana and is mor...
+2025-06-17 08:50:38,452 - INFO - Query validation passed
+2025-06-17 08:50:38,453 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:50:39,401 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:50:41,041 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:50:41,047 - INFO - Retrieved 30 documents
+2025-06-17 08:50:41,048 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:50:42,108 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:50:42,109 - INFO - Generating fact-check response for query
+2025-06-17 08:50:48,514 - INFO - Generated verdict: TRUE
+2025-06-17 08:50:48,515 - INFO - Evaluating response quality
+2025-06-17 08:50:49,031 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:50:49,031 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:50:51,044 - INFO - Validating query: Kumbhakarna sleeps for six months at a time....
+2025-06-17 08:50:51,063 - INFO - Query validation passed
+2025-06-17 08:50:51,064 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:50:51,973 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:50:53,232 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:50:53,246 - INFO - Retrieved 30 documents
+2025-06-17 08:50:53,247 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:50:54,044 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:50:54,045 - INFO - Generating fact-check response for query
+2025-06-17 08:50:59,114 - INFO - Generated verdict: TRUE
+2025-06-17 08:50:59,115 - INFO - Evaluating response quality
+2025-06-17 08:50:59,600 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:50:59,600 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:51:01,614 - INFO - Validating query: Kumbhakarna was Ravana’s father....
+2025-06-17 08:51:01,620 - INFO - Query validation passed
+2025-06-17 08:51:01,620 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:51:02,543 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:51:03,875 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:51:03,884 - INFO - Retrieved 30 documents
+2025-06-17 08:51:03,884 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:51:04,581 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:51:04,581 - INFO - Generating fact-check response for query
+2025-06-17 08:51:10,564 - INFO - Generated verdict: FALSE
+2025-06-17 08:51:10,565 - INFO - Evaluating response quality
+2025-06-17 08:51:11,058 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:51:11,059 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:51:13,072 - INFO - Validating query: Lakshmana betrayed Rama by siding with Ravana duri...
+2025-06-17 08:51:13,095 - INFO - Query validation passed
+2025-06-17 08:51:13,096 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:51:14,015 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:51:15,241 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:51:15,251 - INFO - Retrieved 30 documents
+2025-06-17 08:51:15,252 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:51:16,243 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:51:16,243 - INFO - Generating fact-check response for query
+2025-06-17 08:51:21,914 - INFO - Generated verdict: FALSE
+2025-06-17 08:51:21,916 - INFO - Evaluating response quality
+2025-06-17 08:51:22,698 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:51:22,699 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:51:24,713 - INFO - Validating query: Lakshmana is famous for his love of music and poet...
+2025-06-17 08:51:24,752 - INFO - Query validation passed
+2025-06-17 08:51:24,754 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:51:25,657 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:51:27,545 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:51:27,554 - INFO - Retrieved 30 documents
+2025-06-17 08:51:27,555 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:51:28,461 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:51:28,461 - INFO - Generating fact-check response for query
+2025-06-17 08:51:34,585 - INFO - Generated verdict: FALSE
+2025-06-17 08:51:34,586 - INFO - Evaluating response quality
+2025-06-17 08:51:35,415 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 08:51:35,416 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:51:35,417 - INFO - Retry needed, attempt 1
+2025-06-17 08:51:39,654 - INFO - Evaluating response quality
+2025-06-17 08:51:40,136 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:51:40,136 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:51:40,137 - INFO - Maximum retries (1) reached
+2025-06-17 08:51:42,161 - INFO - Validating query: Lakshmana refused to accompany Rama into exile and...
+2025-06-17 08:51:42,194 - INFO - Query validation passed
+2025-06-17 08:51:42,194 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:51:43,201 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:51:44,937 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:51:44,945 - INFO - Retrieved 30 documents
+2025-06-17 08:51:44,946 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:51:45,974 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:51:45,975 - INFO - Generating fact-check response for query
+2025-06-17 08:51:51,811 - INFO - Generated verdict: FALSE
+2025-06-17 08:51:51,816 - INFO - Evaluating response quality
+2025-06-17 08:51:52,312 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 08:51:52,312 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:51:52,314 - INFO - Retry needed, attempt 1
+2025-06-17 08:51:58,770 - INFO - Evaluating response quality
+2025-06-17 08:51:59,581 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:51:59,582 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:51:59,582 - INFO - Maximum retries (1) reached
+2025-06-17 08:52:01,607 - INFO - Validating query: Lakshmana was not related to Rama but was merely a...
+2025-06-17 08:52:01,655 - INFO - Query validation passed
+2025-06-17 08:52:01,656 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:52:02,560 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:52:04,189 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:52:04,196 - INFO - Retrieved 30 documents
+2025-06-17 08:52:04,198 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:52:05,341 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:52:05,342 - INFO - Generating fact-check response for query
+2025-06-17 08:52:13,619 - INFO - Generated verdict: FALSE
+2025-06-17 08:52:13,623 - INFO - Evaluating response quality
+2025-06-17 08:52:14,330 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:52:14,330 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:52:16,343 - INFO - Validating query: Malyavan was Ravana’s son who betrayed him....
+2025-06-17 08:52:16,370 - INFO - Query validation passed
+2025-06-17 08:52:16,371 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:52:17,395 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:52:19,141 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:52:19,151 - INFO - Retrieved 30 documents
+2025-06-17 08:52:19,153 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:52:21,199 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:52:21,200 - INFO - Generating fact-check response for query
+2025-06-17 08:52:27,341 - INFO - Generated verdict: FALSE
+2025-06-17 08:52:27,344 - INFO - Evaluating response quality
+2025-06-17 08:52:27,948 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 08:52:27,949 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:52:27,950 - INFO - Retry needed, attempt 1
+2025-06-17 08:52:33,377 - INFO - Evaluating response quality
+2025-06-17 08:52:34,092 - INFO - Evaluation results - Feedback: uncertain, Needs retry: True
+2025-06-17 08:52:34,092 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:52:34,093 - INFO - Maximum retries (1) reached
+2025-06-17 08:52:36,110 - INFO - Validating query: Malyavan, a rakshasa commander, advised Ravana to ...
+2025-06-17 08:52:36,141 - INFO - Query validation passed
+2025-06-17 08:52:36,141 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:52:37,263 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:52:38,597 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:52:38,604 - INFO - Retrieved 30 documents
+2025-06-17 08:52:38,605 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:52:39,550 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:52:39,551 - INFO - Generating fact-check response for query
+2025-06-17 08:52:45,705 - INFO - Generated verdict: FALSE
+2025-06-17 08:52:45,707 - INFO - Evaluating response quality
+2025-06-17 08:52:46,585 - INFO - Evaluation results - Feedback: uncertain, Needs retry: True
+2025-06-17 08:52:46,585 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:52:46,586 - INFO - Retry needed, attempt 1
+2025-06-17 08:52:53,345 - INFO - Evaluating response quality
+2025-06-17 08:52:53,960 - INFO - Evaluation results - Feedback: uncertain, Needs retry: True
+2025-06-17 08:52:53,960 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:52:53,961 - INFO - Maximum retries (1) reached
+2025-06-17 08:52:55,969 - INFO - Validating query: Mandavi, Bharata’s wife, is the daughter of King K...
+2025-06-17 08:52:55,997 - INFO - Query validation passed
+2025-06-17 08:52:55,998 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:52:56,888 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:52:58,185 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:52:58,190 - INFO - Retrieved 30 documents
+2025-06-17 08:52:58,191 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:52:59,143 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:52:59,144 - INFO - Generating fact-check response for query
+2025-06-17 08:53:14,026 - INFO - Generated verdict: TRUE
+2025-06-17 08:53:14,031 - INFO - Evaluating response quality
+2025-06-17 08:53:14,510 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:53:14,511 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:53:16,529 - INFO - Validating query: Mandodari, Ravana’s queen, is portrayed as a noble...
+2025-06-17 08:53:16,570 - INFO - Query validation passed
+2025-06-17 08:53:16,571 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:53:17,491 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:53:19,557 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:53:19,563 - INFO - Retrieved 30 documents
+2025-06-17 08:53:19,564 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:53:20,488 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:53:20,488 - INFO - Generating fact-check response for query
+2025-06-17 08:53:25,907 - INFO - Generated verdict: TRUE
+2025-06-17 08:53:25,908 - INFO - Evaluating response quality
+2025-06-17 08:53:26,418 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:53:26,419 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:53:28,432 - INFO - Validating query: Rama breaks Shiva’s bow to win Sita’s hand in marr...
+2025-06-17 08:53:28,465 - INFO - Query validation passed
+2025-06-17 08:53:28,465 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:53:29,375 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:53:30,821 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:53:30,826 - INFO - Retrieved 30 documents
+2025-06-17 08:53:30,826 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:53:31,597 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:53:31,597 - INFO - Generating fact-check response for query
+2025-06-17 08:53:38,083 - INFO - Generated verdict: FALSE
+2025-06-17 08:53:38,085 - INFO - Evaluating response quality
+2025-06-17 08:53:38,919 - INFO - Evaluation results - Feedback: uncertain, Needs retry: True
+2025-06-17 08:53:38,920 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:53:38,920 - INFO - Retry needed, attempt 1
+2025-06-17 08:53:46,399 - INFO - Evaluating response quality
+2025-06-17 08:53:47,002 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 08:53:47,002 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:53:47,003 - INFO - Maximum retries (1) reached
+2025-06-17 08:53:49,018 - INFO - Validating query: Rama is described as having a golden complexion in...
+2025-06-17 08:53:49,046 - INFO - Query validation passed
+2025-06-17 08:53:49,046 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:53:49,968 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:53:51,606 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:53:51,612 - INFO - Retrieved 30 documents
+2025-06-17 08:53:51,613 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:53:53,691 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:53:53,692 - INFO - Generating fact-check response for query
+2025-06-17 08:53:58,563 - INFO - Generated verdict: FALSE
+2025-06-17 08:53:58,565 - INFO - Evaluating response quality
+2025-06-17 08:53:59,100 - INFO - Evaluation results - Feedback: uncertain, Needs retry: True
+2025-06-17 08:53:59,100 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:53:59,100 - INFO - Retry needed, attempt 1
+2025-06-17 08:54:08,808 - INFO - Evaluating response quality
+2025-06-17 08:54:09,331 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 08:54:09,332 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:54:09,332 - INFO - Maximum retries (1) reached
+2025-06-17 08:54:11,372 - INFO - Validating query: Rama is frequently depicted riding a tiger instead...
+2025-06-17 08:54:11,398 - INFO - Query validation passed
+2025-06-17 08:54:11,399 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:54:16,606 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:54:24,548 - INFO - Validating query: Rama is known for his uncontrollable temper and un...
+2025-06-17 08:54:24,579 - INFO - Query validation passed
+2025-06-17 08:54:24,580 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:54:25,632 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:54:33,612 - INFO - Validating query: Rama is often depicted holding a bow and arrow, re...
+2025-06-17 08:54:33,625 - INFO - Query validation passed
+2025-06-17 08:54:33,625 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:54:35,642 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:54:37,178 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:54:37,183 - INFO - Retrieved 30 documents
+2025-06-17 08:54:37,184 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:54:38,702 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:54:38,703 - INFO - Generating fact-check response for query
+2025-06-17 08:54:44,256 - INFO - Generated verdict: TRUE
+2025-06-17 08:54:44,256 - INFO - Evaluating response quality
+2025-06-17 08:54:44,734 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:54:44,734 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:54:46,742 - INFO - Validating query: Rama kills the demoness Tataka in the forest....
+2025-06-17 08:54:46,750 - INFO - Query validation passed
+2025-06-17 08:54:46,750 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:54:53,632 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:54:53,635 - INFO - Retrieved 30 documents
+2025-06-17 08:54:53,637 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:54:54,669 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:54:54,670 - INFO - Generating fact-check response for query
+2025-06-17 08:54:57,057 - INFO - Validating query: Rama refused to go into exile despite his father’s...
+2025-06-17 08:54:57,087 - INFO - Query validation passed
+2025-06-17 08:54:57,088 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:54:58,071 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:54:59,476 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:54:59,483 - INFO - Retrieved 30 documents
+2025-06-17 08:54:59,484 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:55:00,254 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:55:00,256 - INFO - Generating fact-check response for query
+2025-06-17 08:55:05,147 - INFO - Generated verdict: FALSE
+2025-06-17 08:55:05,148 - INFO - Evaluating response quality
+2025-06-17 08:55:05,607 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:55:05,608 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:55:07,620 - INFO - Validating query: Rama uses the Brahmastra to kill Ravana....
+2025-06-17 08:55:07,636 - WARNING - Query validation failed: NOT RELEVANT
+2025-06-17 08:55:09,642 - INFO - Validating query: Rama was born in Lanka and later moved to Ayodhya....
+2025-06-17 08:55:09,666 - INFO - Query validation passed
+2025-06-17 08:55:09,667 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:55:10,556 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:55:12,103 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:55:12,105 - INFO - Retrieved 30 documents
+2025-06-17 08:55:12,105 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:55:12,994 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:55:12,994 - INFO - Generating fact-check response for query
+2025-06-17 08:55:20,695 - INFO - Generated verdict: FALSE
+2025-06-17 08:55:20,698 - INFO - Evaluating response quality
+2025-06-17 08:55:21,245 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 08:55:21,245 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:55:21,246 - INFO - Retry needed, attempt 1
+2025-06-17 08:55:30,399 - INFO - Evaluating response quality
+2025-06-17 08:55:30,941 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:55:30,941 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:55:30,942 - INFO - Maximum retries (1) reached
+2025-06-17 08:55:32,958 - INFO - Validating query: Rama’s departure for exile brought great sorrow to...
+2025-06-17 08:55:32,991 - INFO - Query validation passed
+2025-06-17 08:55:32,992 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:55:33,875 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:55:35,419 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:55:35,422 - INFO - Retrieved 30 documents
+2025-06-17 08:55:35,422 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:55:36,179 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:55:36,179 - INFO - Generating fact-check response for query
+2025-06-17 08:55:41,445 - INFO - Generated verdict: TRUE
+2025-06-17 08:55:41,448 - INFO - Evaluating response quality
+2025-06-17 08:55:42,073 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:55:42,073 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:55:44,090 - INFO - Validating query: Rama’s exile lasted for fourteen years, as decreed...
+2025-06-17 08:55:44,123 - INFO - Query validation passed
+2025-06-17 08:55:44,124 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:55:45,283 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:55:47,213 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:55:47,216 - INFO - Retrieved 30 documents
+2025-06-17 08:55:47,216 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:55:48,386 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:55:48,386 - INFO - Generating fact-check response for query
+2025-06-17 08:55:53,552 - INFO - Generated verdict: TRUE
+2025-06-17 08:55:53,553 - INFO - Evaluating response quality
+2025-06-17 08:55:54,194 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:55:54,194 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:55:56,202 - INFO - Validating query: Rama’s journey to Lanka was undertaken in a hot ai...
+2025-06-17 08:55:56,246 - INFO - Query validation passed
+2025-06-17 08:55:56,247 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:55:57,119 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:55:58,736 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:55:58,740 - INFO - Retrieved 30 documents
+2025-06-17 08:55:58,741 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:55:59,887 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:55:59,888 - INFO - Generating fact-check response for query
+2025-06-17 08:56:04,730 - INFO - Generated verdict: FALSE
+2025-06-17 08:56:04,731 - INFO - Evaluating response quality
+2025-06-17 08:56:06,504 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 08:56:06,507 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:56:06,508 - INFO - Retry needed, attempt 1
+2025-06-17 08:56:19,332 - INFO - Evaluating response quality
+2025-06-17 08:56:20,009 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 08:56:20,009 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:56:20,009 - INFO - Maximum retries (1) reached
+2025-06-17 08:56:22,025 - INFO - Validating query: Rama’s reign is idealized as an era of peace and p...
+2025-06-17 08:56:22,068 - INFO - Query validation passed
+2025-06-17 08:56:22,069 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:56:22,952 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:56:24,491 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:56:24,500 - INFO - Retrieved 30 documents
+2025-06-17 08:56:24,501 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:56:25,456 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:56:25,457 - INFO - Generating fact-check response for query
+2025-06-17 08:56:36,884 - INFO - Generated verdict: TRUE
+2025-06-17 08:56:36,887 - INFO - Evaluating response quality
+2025-06-17 08:56:37,374 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:56:37,374 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:56:39,388 - INFO - Validating query: Rama’s victory over Ravana symbolizes the triumph ...
+2025-06-17 08:56:39,422 - INFO - Query validation passed
+2025-06-17 08:56:39,423 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:56:40,452 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:56:41,935 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:56:41,941 - INFO - Retrieved 30 documents
+2025-06-17 08:56:41,942 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:56:42,826 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:56:42,827 - INFO - Generating fact-check response for query
+2025-06-17 08:56:51,177 - INFO - Generated verdict: TRUE
+2025-06-17 08:56:51,178 - INFO - Evaluating response quality
+2025-06-17 08:56:52,009 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:56:52,009 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:56:54,017 - INFO - Validating query: Ramayana emphasizes the importance of following dh...
+2025-06-17 08:56:54,041 - INFO - Query validation passed
+2025-06-17 08:56:54,042 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:56:54,998 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:56:56,616 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:56:56,627 - INFO - Retrieved 30 documents
+2025-06-17 08:56:56,629 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:56:57,918 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:56:57,918 - INFO - Generating fact-check response for query
+2025-06-17 08:57:04,946 - INFO - Generated verdict: TRUE
+2025-06-17 08:57:04,950 - INFO - Evaluating response quality
+2025-06-17 08:57:05,561 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:57:05,561 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:57:07,584 - INFO - Validating query: Ramayana is traditionally divided into six books, ...
+2025-06-17 08:57:07,616 - INFO - Query validation passed
+2025-06-17 08:57:07,617 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:57:08,506 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:57:10,107 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:57:10,116 - INFO - Retrieved 30 documents
+2025-06-17 08:57:10,119 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:57:11,645 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:57:11,645 - INFO - Generating fact-check response for query
+2025-06-17 08:57:18,508 - INFO - Generated verdict: TRUE
+2025-06-17 08:57:18,511 - INFO - Evaluating response quality
+2025-06-17 08:57:19,097 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:57:19,098 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:57:21,109 - INFO - Validating query: Ramayana was composed by the sage Valmiki, earning...
+2025-06-17 08:57:21,124 - INFO - Query validation passed
+2025-06-17 08:57:21,125 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:57:22,008 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:57:23,509 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:57:23,511 - INFO - Retrieved 30 documents
+2025-06-17 08:57:23,511 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:57:24,974 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:57:24,974 - INFO - Generating fact-check response for query
+2025-06-17 08:57:30,893 - INFO - Generated verdict: TRUE
+2025-06-17 08:57:30,894 - INFO - Evaluating response quality
+2025-06-17 08:57:31,637 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:57:31,638 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:57:33,656 - INFO - Validating query: Ravana is depicted as both a formidable warrior an...
+2025-06-17 08:57:33,693 - INFO - Query validation passed
+2025-06-17 08:57:33,693 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:57:34,515 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:57:35,848 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:57:35,861 - INFO - Retrieved 30 documents
+2025-06-17 08:57:35,863 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:57:36,999 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:57:37,000 - INFO - Generating fact-check response for query
+2025-06-17 08:57:46,147 - INFO - Generated verdict: TRUE
+2025-06-17 08:57:46,151 - INFO - Evaluating response quality
+2025-06-17 08:57:46,633 - INFO - Evaluation results - Feedback: uncertain, Needs retry: True
+2025-06-17 08:57:46,633 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:57:46,634 - INFO - Retry needed, attempt 1
+2025-06-17 08:57:55,856 - INFO - Evaluating response quality
+2025-06-17 08:57:56,647 - INFO - Evaluation results - Feedback: uncertain, Needs retry: True
+2025-06-17 08:57:56,648 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:57:56,648 - INFO - Maximum retries (1) reached
+2025-06-17 08:57:58,662 - INFO - Validating query: Ravana is portrayed as a kind and gentle ruler thr...
+2025-06-17 08:57:58,683 - INFO - Query validation passed
+2025-06-17 08:57:58,684 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:57:59,586 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:58:01,183 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:58:01,188 - INFO - Retrieved 30 documents
+2025-06-17 08:58:01,189 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:58:02,274 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:58:02,275 - INFO - Generating fact-check response for query
+2025-06-17 08:58:09,045 - INFO - Generated verdict: FALSE
+2025-06-17 08:58:09,047 - INFO - Evaluating response quality
+2025-06-17 08:58:09,547 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 08:58:09,547 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:58:09,548 - INFO - Retry needed, attempt 1
+2025-06-17 08:58:15,589 - INFO - Evaluating response quality
+2025-06-17 08:58:16,071 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:58:16,071 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:58:16,071 - INFO - Maximum retries (1) reached
+2025-06-17 08:58:18,091 - INFO - Validating query: Ravana is traditionally depicted with ten heads, s...
+2025-06-17 08:58:18,120 - INFO - Query validation passed
+2025-06-17 08:58:18,120 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:58:19,047 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:58:20,541 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:58:20,550 - INFO - Retrieved 30 documents
+2025-06-17 08:58:20,551 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:58:22,530 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:58:22,530 - INFO - Generating fact-check response for query
+2025-06-17 08:58:30,869 - INFO - Generated verdict: TRUE
+2025-06-17 08:58:30,881 - INFO - Evaluating response quality
+2025-06-17 08:58:31,453 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:58:31,459 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:58:33,504 - INFO - Validating query: Ravana voluntarily returned Sita to Rama out of su...
+2025-06-17 08:58:33,533 - INFO - Query validation passed
+2025-06-17 08:58:33,533 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:58:34,372 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:58:35,920 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:58:35,929 - INFO - Retrieved 30 documents
+2025-06-17 08:58:35,930 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:58:37,321 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:58:37,322 - INFO - Generating fact-check response for query
+2025-06-17 08:58:42,827 - INFO - Generated verdict: FALSE
+2025-06-17 08:58:42,828 - INFO - Evaluating response quality
+2025-06-17 08:58:43,444 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 08:58:43,445 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:58:43,446 - INFO - Retry needed, attempt 1
+2025-06-17 08:58:53,946 - INFO - Evaluating response quality
+2025-06-17 08:58:54,909 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 08:58:54,909 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:58:54,909 - INFO - Maximum retries (1) reached
+2025-06-17 08:58:56,920 - INFO - Validating query: Ravana was a demon (rakshasa) by birth....
+2025-06-17 08:58:56,926 - INFO - Query validation passed
+2025-06-17 08:58:56,926 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:58:57,804 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:58:59,486 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:58:59,494 - INFO - Retrieved 30 documents
+2025-06-17 08:58:59,494 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:59:00,400 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:59:00,401 - INFO - Generating fact-check response for query
+2025-06-17 08:59:06,341 - INFO - Generated verdict: TRUE
+2025-06-17 08:59:06,343 - INFO - Evaluating response quality
+2025-06-17 08:59:06,897 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:59:06,897 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:59:08,909 - INFO - Validating query: Ravana was defeated without any battle or struggle...
+2025-06-17 08:59:08,935 - INFO - Query validation passed
+2025-06-17 08:59:08,936 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:59:09,967 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:59:11,580 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:59:11,583 - INFO - Retrieved 30 documents
+2025-06-17 08:59:11,584 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:59:12,370 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:59:12,371 - INFO - Generating fact-check response for query
+2025-06-17 08:59:19,630 - INFO - Generated verdict: FALSE
+2025-06-17 08:59:19,630 - INFO - Evaluating response quality
+2025-06-17 08:59:20,127 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:59:20,127 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:59:22,143 - INFO - Validating query: Ravana was undefeatable because he had a magical a...
+2025-06-17 08:59:22,157 - INFO - Query validation passed
+2025-06-17 08:59:22,158 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:59:22,982 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:59:24,500 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:59:24,503 - INFO - Retrieved 30 documents
+2025-06-17 08:59:24,504 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:59:25,456 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:59:25,457 - INFO - Generating fact-check response for query
+2025-06-17 08:59:32,641 - INFO - Generated verdict: FALSE
+2025-06-17 08:59:32,642 - INFO - Evaluating response quality
+2025-06-17 08:59:33,148 - INFO - Evaluation results - Feedback: uncertain, Needs retry: True
+2025-06-17 08:59:33,148 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:59:33,148 - INFO - Retry needed, attempt 1
+2025-06-17 08:59:42,360 - INFO - Evaluating response quality
+2025-06-17 08:59:43,018 - INFO - Evaluation results - Feedback: uncertain, Needs retry: True
+2025-06-17 08:59:43,018 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 08:59:43,018 - INFO - Maximum retries (1) reached
+2025-06-17 08:59:45,034 - INFO - Validating query: Ravana’s son Indrajit uses magical weapons in batt...
+2025-06-17 08:59:45,045 - INFO - Query validation passed
+2025-06-17 08:59:45,046 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:59:45,890 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:59:47,337 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:59:47,340 - INFO - Retrieved 30 documents
+2025-06-17 08:59:47,341 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:59:48,750 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:59:48,753 - INFO - Generating fact-check response for query
+2025-06-17 08:59:53,235 - INFO - Generated verdict: TRUE
+2025-06-17 08:59:53,235 - INFO - Evaluating response quality
+2025-06-17 08:59:53,759 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 08:59:53,759 - INFO - Confidence: 1.000, Evidence quality: high
+2025-06-17 08:59:55,771 - INFO - Validating query: Sage Agastya blessed Rama during his early adventu...
+2025-06-17 08:59:55,785 - INFO - Query validation passed
+2025-06-17 08:59:55,785 - INFO - Retrieving top 30 documents for query
+2025-06-17 08:59:56,759 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 08:59:58,187 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 08:59:58,189 - INFO - Retrieved 30 documents
+2025-06-17 08:59:58,190 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 08:59:59,386 - INFO - Reranking completed, 15 documents selected
+2025-06-17 08:59:59,386 - INFO - Generating fact-check response for query
+2025-06-17 09:00:11,091 - INFO - Generated verdict: TRUE
+2025-06-17 09:00:11,096 - INFO - Evaluating response quality
+2025-06-17 09:00:11,932 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 09:00:11,933 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:00:13,951 - INFO - Validating query: Shatrughna is Rama's youngest brother....
+2025-06-17 09:00:13,960 - INFO - Query validation passed
+2025-06-17 09:00:13,961 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:00:14,844 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:00:16,359 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:00:16,363 - INFO - Retrieved 30 documents
+2025-06-17 09:00:16,364 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:00:17,812 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:00:17,813 - INFO - Generating fact-check response for query
+2025-06-17 09:00:24,965 - INFO - Generated verdict: TRUE
+2025-06-17 09:00:24,966 - INFO - Evaluating response quality
+2025-06-17 09:00:25,447 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 09:00:25,448 - INFO - Confidence: 0.001, Evidence quality: low
+2025-06-17 09:00:27,456 - INFO - Validating query: Shurpanakha tries to seduce Rama and Lakshmana but...
+2025-06-17 09:00:27,487 - WARNING - Query validation failed: NOT RELEVANT
+2025-06-17 09:00:29,496 - INFO - Validating query: Sita accompanied Rama into exile, symbolizing her ...
+2025-06-17 09:00:29,517 - INFO - Query validation passed
+2025-06-17 09:00:29,517 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:00:30,409 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:00:31,818 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:00:31,830 - INFO - Retrieved 30 documents
+2025-06-17 09:00:31,831 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:00:32,808 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:00:32,808 - INFO - Generating fact-check response for query
+2025-06-17 09:00:39,269 - INFO - Generated verdict: FALSE
+2025-06-17 09:00:39,273 - INFO - Evaluating response quality
+2025-06-17 09:00:39,775 - INFO - Evaluation results - Feedback: uncertain, Needs retry: True
+2025-06-17 09:00:39,775 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:00:39,776 - INFO - Retry needed, attempt 1
+2025-06-17 09:00:44,800 - INFO - Evaluating response quality
+2025-06-17 09:00:45,426 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 09:00:45,426 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:00:45,426 - INFO - Maximum retries (1) reached
+2025-06-17 09:00:47,443 - INFO - Validating query: Sita cursed Ravana to be reborn as a demon again....
+2025-06-17 09:00:47,468 - INFO - Query validation passed
+2025-06-17 09:00:47,468 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:00:48,335 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:00:50,012 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:00:50,021 - INFO - Retrieved 30 documents
+2025-06-17 09:00:50,022 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:00:50,856 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:00:50,856 - INFO - Generating fact-check response for query
+2025-06-17 09:00:54,851 - INFO - Generated verdict: FALSE
+2025-06-17 09:00:54,852 - INFO - Evaluating response quality
+2025-06-17 09:00:55,333 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 09:00:55,333 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:00:57,346 - INFO - Validating query: Sita is described as having magical powers that al...
+2025-06-17 09:00:57,378 - INFO - Query validation passed
+2025-06-17 09:00:57,379 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:00:58,317 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:00:59,465 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:00:59,473 - INFO - Retrieved 30 documents
+2025-06-17 09:00:59,475 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:01:01,594 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:01:01,595 - INFO - Generating fact-check response for query
+2025-06-17 09:01:07,700 - INFO - Generated verdict: FALSE
+2025-06-17 09:01:07,702 - INFO - Evaluating response quality
+2025-06-17 09:01:08,285 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 09:01:08,285 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:01:08,286 - INFO - Retry needed, attempt 1
+2025-06-17 09:01:14,221 - INFO - Evaluating response quality
+2025-06-17 09:01:15,056 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 09:01:15,056 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:01:15,057 - INFO - Maximum retries (1) reached
+2025-06-17 09:01:17,071 - INFO - Validating query: Sita is found by King Janaka while he is ploughing...
+2025-06-17 09:01:17,101 - INFO - Query validation passed
+2025-06-17 09:01:17,101 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:01:17,971 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:01:19,501 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:01:19,510 - INFO - Retrieved 30 documents
+2025-06-17 09:01:19,511 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:01:21,577 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:01:21,578 - INFO - Generating fact-check response for query
+2025-06-17 09:01:27,735 - INFO - Generated verdict: FALSE
+2025-06-17 09:01:27,737 - INFO - Evaluating response quality
+2025-06-17 09:01:28,190 - INFO - Evaluation results - Feedback: uncertain, Needs retry: True
+2025-06-17 09:01:28,190 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:01:28,191 - INFO - Retry needed, attempt 1
+2025-06-17 09:01:33,445 - INFO - Evaluating response quality
+2025-06-17 09:01:34,012 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 09:01:34,013 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:01:34,013 - INFO - Maximum retries (1) reached
+2025-06-17 09:01:36,019 - INFO - Validating query: Sita is portrayed as a warrior who fought against ...
+2025-06-17 09:01:36,051 - INFO - Query validation passed
+2025-06-17 09:01:36,052 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:01:38,996 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:01:40,448 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:01:41,323 - INFO - Retrieved 30 documents
+2025-06-17 09:01:41,324 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:01:42,167 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:01:42,168 - INFO - Generating fact-check response for query
+2025-06-17 09:01:47,644 - INFO - Generated verdict: FALSE
+2025-06-17 09:01:47,646 - INFO - Evaluating response quality
+2025-06-17 09:01:48,180 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 09:01:48,181 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:01:48,181 - INFO - Retry needed, attempt 1
+2025-06-17 09:01:53,407 - INFO - Evaluating response quality
+2025-06-17 09:01:54,898 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 09:01:54,898 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:01:54,899 - INFO - Maximum retries (1) reached
+2025-06-17 09:01:56,910 - INFO - Validating query: Sita left Rama willingly to live in Lanka....
+2025-06-17 09:01:56,935 - INFO - Query validation passed
+2025-06-17 09:01:56,936 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:01:57,815 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:01:59,085 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:01:59,089 - INFO - Retrieved 30 documents
+2025-06-17 09:01:59,090 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:01:59,798 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:01:59,798 - INFO - Generating fact-check response for query
+2025-06-17 09:02:06,075 - INFO - Generated verdict: FALSE
+2025-06-17 09:02:06,078 - INFO - Evaluating response quality
+2025-06-17 09:02:06,543 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 09:02:06,544 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:02:06,544 - INFO - Retry needed, attempt 1
+2025-06-17 09:02:12,228 - INFO - Evaluating response quality
+2025-06-17 09:02:12,698 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 09:02:12,699 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:02:12,699 - INFO - Maximum retries (1) reached
+2025-06-17 09:02:14,714 - INFO - Validating query: Sita was never abducted; she voluntarily went to L...
+2025-06-17 09:02:14,744 - INFO - Query validation passed
+2025-06-17 09:02:14,744 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:02:15,731 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:02:17,162 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:02:17,181 - INFO - Retrieved 30 documents
+2025-06-17 09:02:17,182 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:02:18,307 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:02:18,308 - INFO - Generating fact-check response for query
+2025-06-17 09:02:25,540 - INFO - Generated verdict: FALSE
+2025-06-17 09:02:25,541 - INFO - Evaluating response quality
+2025-06-17 09:02:26,287 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 09:02:26,288 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:02:26,289 - INFO - Retry needed, attempt 1
+2025-06-17 09:02:32,736 - INFO - Evaluating response quality
+2025-06-17 09:02:33,556 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 09:02:33,556 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:02:33,557 - INFO - Maximum retries (1) reached
+2025-06-17 09:02:35,577 - INFO - Validating query: Sita was the biological daughter of Ravana....
+2025-06-17 09:02:35,593 - INFO - Query validation passed
+2025-06-17 09:02:35,594 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:02:36,484 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:02:38,009 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:02:38,021 - INFO - Retrieved 30 documents
+2025-06-17 09:02:38,022 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:02:39,408 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:02:39,408 - INFO - Generating fact-check response for query
+2025-06-17 09:02:44,469 - INFO - Generated verdict: FALSE
+2025-06-17 09:02:44,471 - INFO - Evaluating response quality
+2025-06-17 09:02:44,922 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 09:02:44,922 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:02:46,951 - INFO - Validating query: Sita’s abduction by Ravana led to the unification ...
+2025-06-17 09:02:46,992 - INFO - Query validation passed
+2025-06-17 09:02:46,992 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:02:47,881 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:02:49,377 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:02:49,383 - INFO - Retrieved 30 documents
+2025-06-17 09:02:49,384 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:02:50,305 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:02:50,307 - INFO - Generating fact-check response for query
+2025-06-17 09:02:56,657 - INFO - Generated verdict: FALSE
+2025-06-17 09:02:56,659 - INFO - Evaluating response quality
+2025-06-17 09:02:57,183 - INFO - Evaluation results - Feedback: uncertain, Needs retry: True
+2025-06-17 09:02:57,183 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:02:57,184 - INFO - Retry needed, attempt 1
+2025-06-17 09:03:03,404 - INFO - Evaluating response quality
+2025-06-17 09:03:04,209 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 09:03:04,209 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:03:04,210 - INFO - Maximum retries (1) reached
+2025-06-17 09:03:06,224 - INFO - Validating query: Sugreeva defeats Bali in a fist fight....
+2025-06-17 09:03:06,244 - INFO - Query validation passed
+2025-06-17 09:03:06,246 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:03:07,131 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:03:08,650 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:03:08,654 - INFO - Retrieved 30 documents
+2025-06-17 09:03:08,655 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:03:09,627 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:03:09,627 - INFO - Generating fact-check response for query
+2025-06-17 09:03:15,332 - INFO - Generated verdict: FALSE
+2025-06-17 09:03:15,333 - INFO - Evaluating response quality
+2025-06-17 09:03:15,795 - INFO - Evaluation results - Feedback: uncertain, Needs retry: True
+2025-06-17 09:03:15,796 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:03:15,796 - INFO - Retry needed, attempt 1
+2025-06-17 09:03:22,752 - INFO - Evaluating response quality
+2025-06-17 09:03:23,384 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 09:03:23,384 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:03:23,384 - INFO - Maximum retries (1) reached
+2025-06-17 09:03:25,395 - INFO - Validating query: Sugreeva, the monkey king, became a trusted ally o...
+2025-06-17 09:03:25,433 - INFO - Query validation passed
+2025-06-17 09:03:25,433 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:03:26,286 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:03:27,772 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:03:27,777 - INFO - Retrieved 30 documents
+2025-06-17 09:03:27,778 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:03:28,767 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:03:28,768 - INFO - Generating fact-check response for query
+2025-06-17 09:03:53,492 - INFO - Generated verdict: TRUE
+2025-06-17 09:03:53,495 - INFO - Evaluating response quality
+2025-06-17 09:03:54,032 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 09:03:54,033 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:03:56,043 - INFO - Validating query: Sugriva becomes king of Kishkindha with Rama’s hel...
+2025-06-17 09:03:56,066 - INFO - Query validation passed
+2025-06-17 09:03:56,066 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:03:56,955 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:03:58,270 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:03:58,280 - INFO - Retrieved 30 documents
+2025-06-17 09:03:58,281 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:03:59,248 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:03:59,248 - INFO - Generating fact-check response for query
+2025-06-17 09:04:05,708 - INFO - Generated verdict: TRUE
+2025-06-17 09:04:05,715 - INFO - Evaluating response quality
+2025-06-17 09:04:06,210 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 09:04:06,210 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:04:08,220 - INFO - Validating query: Sugriva was hesitant to trust Rama until Rama help...
+2025-06-17 09:04:08,250 - INFO - Query validation passed
+2025-06-17 09:04:08,251 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:04:09,196 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:04:10,740 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:04:10,746 - INFO - Retrieved 30 documents
+2025-06-17 09:04:10,749 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:04:11,871 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:04:11,871 - INFO - Generating fact-check response for query
+2025-06-17 09:04:21,529 - INFO - Generated verdict: TRUE
+2025-06-17 09:04:21,536 - INFO - Evaluating response quality
+2025-06-17 09:04:22,127 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 09:04:22,127 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:04:24,164 - INFO - Validating query: Sumantra was a warrior who fought bravely in Lanka...
+2025-06-17 09:04:24,188 - INFO - Query validation passed
+2025-06-17 09:04:24,188 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:04:25,048 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:04:26,753 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:04:26,767 - INFO - Retrieved 30 documents
+2025-06-17 09:04:26,773 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:04:27,752 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:04:27,753 - INFO - Generating fact-check response for query
+2025-06-17 09:04:34,948 - INFO - Generated verdict: FALSE
+2025-06-17 09:04:34,949 - INFO - Evaluating response quality
+2025-06-17 09:04:35,469 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 09:04:35,469 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:04:35,469 - INFO - Retry needed, attempt 1
+2025-06-17 09:04:44,325 - INFO - Evaluating response quality
+2025-06-17 09:04:45,080 - INFO - Evaluation results - Feedback: uncertain, Needs retry: True
+2025-06-17 09:04:45,080 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:04:45,081 - INFO - Maximum retries (1) reached
+2025-06-17 09:04:47,100 - INFO - Validating query: The monkey army in the Ramayana was led by Ravana ...
+2025-06-17 09:04:47,132 - INFO - Query validation passed
+2025-06-17 09:04:47,133 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:04:48,311 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:04:50,011 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:04:50,018 - INFO - Retrieved 30 documents
+2025-06-17 09:04:50,019 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:04:51,021 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:04:51,021 - INFO - Generating fact-check response for query
+2025-06-17 09:04:55,685 - INFO - Generated verdict: FALSE
+2025-06-17 09:04:55,687 - INFO - Evaluating response quality
+2025-06-17 09:04:56,172 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 09:04:56,172 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:04:58,186 - INFO - Validating query: The monkey warrior Nala was an architect who helpe...
+2025-06-17 09:04:58,226 - INFO - Query validation passed
+2025-06-17 09:04:58,227 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:04:59,163 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:05:00,678 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:05:00,685 - INFO - Retrieved 30 documents
+2025-06-17 09:05:00,686 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:05:01,818 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:05:01,819 - INFO - Generating fact-check response for query
+2025-06-17 09:05:08,206 - INFO - Generated verdict: TRUE
+2025-06-17 09:05:08,208 - INFO - Evaluating response quality
+2025-06-17 09:05:08,858 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 09:05:08,859 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:05:10,883 - INFO - Validating query: The vulture Sampati aided Hanuman by providing cru...
+2025-06-17 09:05:10,912 - INFO - Query validation passed
+2025-06-17 09:05:10,912 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:05:11,843 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:05:13,499 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:05:13,505 - INFO - Retrieved 30 documents
+2025-06-17 09:05:13,506 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:05:14,374 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:05:14,374 - INFO - Generating fact-check response for query
+2025-06-17 09:05:18,972 - INFO - Generated verdict: FALSE
+2025-06-17 09:05:18,973 - INFO - Evaluating response quality
+2025-06-17 09:05:19,543 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 09:05:19,544 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:05:19,544 - INFO - Retry needed, attempt 1
+2025-06-17 09:05:26,496 - INFO - Evaluating response quality
+2025-06-17 09:05:27,008 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 09:05:27,009 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:05:27,009 - INFO - Maximum retries (1) reached
+2025-06-17 09:05:29,034 - INFO - Validating query: Trijata comforts Sita during her captivity through...
+2025-06-17 09:05:29,046 - INFO - Query validation passed
+2025-06-17 09:05:29,047 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:05:29,940 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:05:31,578 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:05:31,682 - INFO - Retrieved 30 documents
+2025-06-17 09:05:31,684 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:05:32,839 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:05:32,840 - INFO - Generating fact-check response for query
+2025-06-17 09:05:42,785 - INFO - Generated verdict: TRUE
+2025-06-17 09:05:42,791 - INFO - Evaluating response quality
+2025-06-17 09:05:43,308 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 09:05:43,308 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:05:45,328 - INFO - Validating query: Vali is killed by Rama from behind while fighting ...
+2025-06-17 09:05:45,358 - INFO - Query validation passed
+2025-06-17 09:05:45,359 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:05:46,238 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:05:48,010 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:05:48,021 - INFO - Retrieved 30 documents
+2025-06-17 09:05:48,023 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:05:48,791 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:05:48,792 - INFO - Generating fact-check response for query
+2025-06-17 09:05:55,697 - INFO - Generated verdict: FALSE
+2025-06-17 09:05:55,699 - INFO - Evaluating response quality
+2025-06-17 09:05:56,642 - INFO - Evaluation results - Feedback: uncertain, Needs retry: True
+2025-06-17 09:05:56,642 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:05:56,643 - INFO - Retry needed, attempt 1
+2025-06-17 09:06:03,169 - INFO - Evaluating response quality
+2025-06-17 09:06:03,671 - INFO - Evaluation results - Feedback: uncertain, Needs retry: True
+2025-06-17 09:06:03,672 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:06:03,672 - INFO - Maximum retries (1) reached
+2025-06-17 09:06:05,689 - INFO - Validating query: Valmiki composed the Ramayana while exiled on a de...
+2025-06-17 09:06:05,725 - INFO - Query validation passed
+2025-06-17 09:06:05,726 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:06:06,602 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:06:08,271 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:06:08,292 - INFO - Retrieved 30 documents
+2025-06-17 09:06:08,295 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:06:10,142 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:06:10,142 - INFO - Generating fact-check response for query
+2025-06-17 09:06:16,966 - INFO - Generated verdict: FALSE
+2025-06-17 09:06:16,969 - INFO - Evaluating response quality
+2025-06-17 09:06:17,496 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 09:06:17,496 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:06:17,497 - INFO - Retry needed, attempt 1
+2025-06-17 09:06:24,457 - INFO - Evaluating response quality
+2025-06-17 09:06:24,970 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 09:06:24,971 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:06:24,971 - INFO - Maximum retries (1) reached
+2025-06-17 09:06:27,008 - INFO - Validating query: Valmiki was a warrior king who fought alongside Ra...
+2025-06-17 09:06:27,042 - INFO - Query validation passed
+2025-06-17 09:06:27,043 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:06:28,007 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:06:29,719 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:06:29,724 - INFO - Retrieved 30 documents
+2025-06-17 09:06:29,725 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:06:31,586 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:06:31,586 - INFO - Generating fact-check response for query
+2025-06-17 09:06:38,521 - INFO - Generated verdict: FALSE
+2025-06-17 09:06:38,523 - INFO - Evaluating response quality
+2025-06-17 09:06:39,106 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 09:06:39,106 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:06:39,107 - INFO - Retry needed, attempt 1
+2025-06-17 09:06:45,765 - INFO - Evaluating response quality
+2025-06-17 09:06:46,230 - INFO - Evaluation results - Feedback: hallucinated, Needs retry: True
+2025-06-17 09:06:46,231 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:06:46,231 - INFO - Maximum retries (1) reached
+2025-06-17 09:06:48,253 - INFO - Validating query: Vibhisana was killed in the war between Rama and R...
+2025-06-17 09:06:48,277 - INFO - Query validation passed
+2025-06-17 09:06:48,277 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:06:49,139 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:06:50,779 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:06:50,792 - INFO - Retrieved 30 documents
+2025-06-17 09:06:50,796 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:06:52,014 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:06:52,014 - INFO - Generating fact-check response for query
+2025-06-17 09:06:59,548 - INFO - Generated verdict: FALSE
+2025-06-17 09:06:59,560 - INFO - Evaluating response quality
+2025-06-17 09:07:00,049 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 09:07:00,049 - INFO - Confidence: 0.000, Evidence quality: low
+2025-06-17 09:07:02,068 - INFO - Validating query: Vibhishana, Ravana’s brother, defected to Rama’s s...
+2025-06-17 09:07:02,110 - INFO - Query validation passed
+2025-06-17 09:07:02,111 - INFO - Retrieving top 30 documents for query
+2025-06-17 09:07:03,009 - INFO - HTTP Request: GET https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io "HTTP/1.1 200 OK"
+2025-06-17 09:07:04,706 - INFO - HTTP Request: POST https://19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io/collections/ramayana_facts/points/search "HTTP/1.1 200 OK"
+2025-06-17 09:07:04,714 - INFO - Retrieved 30 documents
+2025-06-17 09:07:04,716 - INFO - Reranking 30 documents, keeping top 15
+2025-06-17 09:07:05,953 - INFO - Reranking completed, 15 documents selected
+2025-06-17 09:07:05,954 - INFO - Generating fact-check response for query
+2025-06-17 09:07:13,510 - INFO - Generated verdict: TRUE
+2025-06-17 09:07:13,513 - INFO - Evaluating response quality
+2025-06-17 09:07:16,417 - INFO - Evaluation results - Feedback: reliable, Needs retry: False
+2025-06-17 09:07:16,417 - INFO - Confidence: 0.146, Evidence quality: low

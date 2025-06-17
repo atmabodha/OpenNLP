@@ -1,0 +1,28 @@
+# Core data processing
+pandas>=1.5.0
+numpy>=1.21.0
+
+# NLP and text processing
+nltk>=3.8
+inflect>=6.0.0
+
+# API client
+groq>=0.4.0
+
+# Progress bars
+tqdm>=4.64.0
+
+# Standard library dependencies (usually included with Python) - commented out
+# pathlib
+# re
+# time
+# json
+# logging
+# os
+# typing
+# warnings
+
+# Note: After installing nltk, you may need to download the WordNet dataset
+# Your code handles this automatically, but if you encounter issues, manually run:
+# import nltk
+# nltk.download('wordnet')
