@@ -28,9 +28,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # API Configuration
-MISTRAL_API_KEY = "Sx9wjoosQ6rNbjoNTXlQus1HSAjUublB"
-QDRANT_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.LOTpaZOycm_u2Dj_FsoWyAbSCjEs_AQf0yyYCcjKtgk"
-QDRANT_HOST = "19208b69-1b41-4830-9b4d-66b3e1181237.us-east4-0.gcp.cloud.qdrant.io"
+MISTRAL_API_KEY = ""
+QDRANT_API_KEY = ""
+QDRANT_HOST = ""
 
 collection_name = "ramayana_facts"
 
