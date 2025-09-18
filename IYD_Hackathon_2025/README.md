@@ -1,6 +1,6 @@
 # IYD Hackathon 2025
 
-Hackathon held around **International Yoga Day (June 21, 2025)** — a youth-driven innovation celebration organized by **Yoga Vivek**.
+Hackathon held around **International Yoga Day (June 21, 2025)**.
 
 ---
 
@@ -48,7 +48,7 @@ Create an AI based fact checker which takes a statement as input from the user (
 
 ---
 
-## Important Date
+## Important Dates
 
 April 06, 2025: [Register on Unstop](https://unstop.com/o/QX843J0?lb=t3y5qqWx)
 
