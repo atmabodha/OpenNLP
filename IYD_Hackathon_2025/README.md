@@ -67,14 +67,19 @@ June 21, 2025: Prize Announcement
 ## Prizes
 
 - 1st Prize : INR 25k
+
   Pradyuman Thakur [ICAR, New Delhi]
 
-2nd Prize : INR 12.5k
+- 2nd Prize : INR 12.5k
+
 Team 2A: Harsha Sah & Shaswath Prabhu [Ramaiah Institute of Technology, Bangaluru]
+
 Team 2B: Sanjay VP [SRMU, Lucknow]
 
-4th, 5th and consolation prizes : INR 1k each
+- 4th, 5th and consolation prizes : INR 1k each
+
 Team 4: Vidhika Mangla & Sanya Goel [ BML Munjal University, Gurugram]
+
 Team 5: Harshit Bhanushali, Aishwarya Deshmukh & Akshat Singh [ DJ Sanghvi College of Engineering]
 
 ---
@@ -91,5 +96,3 @@ Team 5: Harshit Bhanushali, Aishwarya Deshmukh & Akshat Singh [ DJ Sanghvi Colle
 Interested in sponsoring, mentoring, or joining future Hackathons?
 
 Write to: **atmabodha@gmail.com**
-
-Visit: **https://www.yogavivek.org**
