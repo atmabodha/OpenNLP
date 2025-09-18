@@ -88,11 +88,3 @@ Team 5: Harshit Bhanushali, Aishwarya Deshmukh & Akshat Singh [ DJ Sanghvi Colle
 
 - [Dr. Kushal Shah](https://www.linkedin.com/in/kushal-shah-95b9a3b/)
 - [Mr. Vishal Manchanda](https://www.linkedin.com/in/vishal-manchanda-097a6643/)
-
----
-
-## 📬 Connect With Us
-
-Interested in sponsoring, mentoring, or joining future Hackathons?
-
-Write to: **atmabodha@gmail.com**
