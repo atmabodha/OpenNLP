@@ -86,5 +86,5 @@ Team 5: Harshit Bhanushali, Aishwarya Deshmukh & Akshat Singh [ DJ Sanghvi Colle
 
 ## Organisers
 
-- [Dr. Kushal Shah](https://www.linkedin.com/in/kushal-shah-95b9a3b/)
-- [Mr. Vishal Manchanda](https://www.linkedin.com/in/vishal-manchanda-097a6643/)
+- [Dr. Kushal Shah, UTMT](https://www.utmt.org)
+- [Mr. Vishal Manchanda, Infosys](https://www.linkedin.com/in/vishal-manchanda-097a6643/)
