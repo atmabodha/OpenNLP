@@ -338,6 +338,6 @@ Nikhil Yadav, Sanjay VP & Nikhil Raj Soni [SRMU, Lucknow]
 
 ## Organisers
 
-- [Dr. Kushal Shah, UTMT](https://www.utmt.org).
+- [Dr. Kushal Shah, UTMT](https://www.utmt.org)
 - [Mr. Vishal Manchanda, Infosys](https://www.linkedin.com/in/vishal-manchanda-097a6643/)
 - Other well wishers
