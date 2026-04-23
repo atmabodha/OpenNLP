@@ -1,5 +1,0 @@
-Flask
-nbformat
-pandas
-requests
-python-certifi-win32   # ← fixes SSL validation on Windows
