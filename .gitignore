@@ -1,1 +1,9 @@
 .DS_Store
+.claude/
+graft/
+.cursor/
+.github/
+.mcp*
+AGENTS.md
+.gemini/
+.env
